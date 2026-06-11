@@ -1,0 +1,60 @@
+# Xcode
+DerivedData/
+.build/
+
+# User settings
+*.xcuserstate
+xcuserdata/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# CocoaPods
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# macOS
+.DS_Store
+
+# Archives
+*.xcarchive
+
+# App bundles
+*.ipa
+
+# Environment files
+.envDerivedData/
+.build/
+
+# User settings
+*.xcuserstate
+xcuserdata/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# CocoaPods
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# macOS
+.DS_Store
+
+# Archives
+*.xcarchive
+
+# App bundles
+*.ipa
+
+# Environment files
+.env

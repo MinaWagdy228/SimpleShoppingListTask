@@ -5,10 +5,19 @@
 //  Created by Mina_Wagdy on 10/06/2026.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ProductListView: View {
-    @State var productsViewModel: ProductsViewModel = ProductsViewModel()
+    @Environment(\.modelContext) private var modelContext
+    @State var productsViewModel: ProductsViewModel
+    init(modelContext: ModelContext) {
+        _productsViewModel = State(
+            initialValue: ProductsViewModel(
+                modelContext: modelContext
+            )
+        )
+    }
     var body: some View {
         VStack {
             Text("Shopping List")
@@ -23,6 +32,6 @@ struct ProductListView: View {
     }
 }
 
-#Preview {
-    ProductListView()
-}
+//#Preview {
+//    ProductListView(modelContext: modelContxt)
+//}

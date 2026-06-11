@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ItemRow: View {
-    var item : Item
+    var item: Item
+    let onDelete: () -> Void
     var body: some View {
-        HStack{
+        HStack {
             Text(item.name)
                 .font(.title2)
                 .padding()
-            
+            Spacer()
+            Button {
+                onDelete()
+            } label: {
+                Image(systemName: "trash.fill")
+                    .frame(width: 30, height: 30)
+                    .background(.red)
+                    .foregroundColor(Color(.white))
+                    .clipShape(Circle())
+
+            }
         }
     }
 }
